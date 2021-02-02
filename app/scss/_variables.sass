@@ -1,3 +1,4 @@
+//colors
 $dark-blue: hsl(233, 26%, 24%)
 $lime-green: hsl(136, 65%, 51%)
 $bright-cyan: hsl(192, 70%, 51%)
@@ -5,3 +6,20 @@ $grayish-blue: hsl(233, 8%, 62%)
 $light-grayish-blue: hsl(220, 16%, 96%)
 $very-light-gray: hsl(0, 0%, 98%)
 $white: hsl(0, 0%, 100%)
+$gradient: linear-gradient(0.25turn, $lime-green,$bright-cyan )
+
+// screen resolutions
+
+// 300px 800px,1024px, 1280xpx, 1158px
+$breakpoints-up: ("xsmall": 18.75rem, "small":50rem ,"medium":64rem,"large":72.375rem)
+
+// 799x,1023px, 1279xpx, 1157px
+$breakpoints-down: ("small":49.9375rem ,"medium":63.9375rem, "large":72.3125rem)
+
+@mixin breakpoint-up($viewport-size)
+  @media(min-width: map-get($breakpoints-up,$viewport-size))
+    @content
+
+@mixin breakpoint-down($viewport-size)
+  @media(max-width: map-get($breakpoints-down,$viewport-size))
+    @content

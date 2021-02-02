@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 
   <title>Frontend Mentor | Easybank landing page</title>
 
@@ -24,13 +25,44 @@
 
 <body>
 
-  Home
-  About
-  Contact
-  Blog
+  <div class="wrapper">
+    <header class="header flex flex--js--sb">
+      <a class="flex flex--dir--c flex--jc--c" href="#"><img src="./images/logo.svg" alt="" class="header__logo"></a>
+      <nav>
+        <ul class="flex flex--js--sb navbar hide-for-mobile">
+          <a href="#" class="navbar__item">
+            <li class="">Home</li>
+          </a>
+          <a href="#" class="navbar__item">
+            <li class="">About</li>
+          </a>
+          <a href="#" class="navbar__item">
+            <li class="">Contact</li>
+          </a>
+          <a href="#" class="navbar__item">
+            <li class="">Blog</li>
+          </a>
+          <a href="#" class="navbar__item">
+            <li class="">Careers</li>
+          </a>
+        </ul>
+      </nav>
+      <div class="menu flex--as--c hide-for-desktop">
+        <div class="menu__item"></div>
+        <div class="menu__item"></div>
+        <div class="menu__item"></div>
+      </div>
+      <button class="request__btn flex--as--c hide-for-mobile">Request Invite</button>
+    </header>
+  </div>
+
+
+
+
+
   Careers
 
-  Request Invite
+
 
 
 
