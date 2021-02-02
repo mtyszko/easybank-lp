@@ -10,7 +10,8 @@
 
 // navigation
 .navbar
-  width: 20.75rem
+  min-width: 20.75rem
+  transition: .2s ease-in-out
 
   &__item
     position: relative
@@ -20,6 +21,31 @@
 
     @include breakpoint-up(small)
       line-height: 5rem
+
+    @include breakpoint-down(small)
+      display: block
+      min-width: 252px
+      margin: 0 24px
+      line-height: 46px
+      font-size: 18px
+      color: $dark-blue
+      font-weight: 400
+      text-align: center
+      background-color: #ffffff
+
+      &:first-child
+        margin-top: 24px
+        padding-top: 18px
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+
+      &:last-child
+        padding-bottom: 20px
+        border-bottom-left-radius: 3px
+        border-bottom-right-radius: 3px
+
+      &::after
+        display: none
 
     &::after
       content: ''
@@ -36,7 +62,20 @@
       &::after
         background: $gradient
 
-  // hamburger menu
+// navbar mobile version
+.navbar--mobile
+  @include breakpoint-down(small)
+    position: absolute
+    top: 60px
+    bottom: 0
+    left: 0
+    right: 0
+    min-width: 300px
+    display: block
+    background: linear-gradient(hsla(233, 26%, 24%,0.9), hsla(0, 0%, 100%,0.9))
+    transition: .2s ease-in-out
+
+// hamburger menu
 .menu
   position: relative
   right: 1.5rem
