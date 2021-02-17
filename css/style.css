@@ -65,16 +65,21 @@ li {
           align-self: center;
 }
 
-.wrapper {
-  max-width: clamp(18.75rem, 100vw, 72.375rem);
-  margin: 0 auto;
+.bg--light {
+  background: #fafafa;
+}
+
+.bg--grey {
+  background: #9698a6;
 }
 
 .header {
+  max-width: clamp(18.75rem, 100vw, 72.375rem);
   height: 3.75rem;
+  margin: 0 auto;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 64rem) {
   .header {
     height: 5rem;
   }
@@ -101,34 +106,34 @@ li {
   transition: .2s ease-in-out;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 64rem) {
   .navbar__item {
     line-height: 5rem;
   }
 }
 
-@media (max-width: 49.9375rem) {
+@media (max-width: 63.9375rem) {
   .navbar__item {
     display: block;
-    min-width: 252px;
-    margin: 0 24px;
-    line-height: 46px;
-    font-size: 18px;
+    min-width: 15.75rem;
+    margin: 0 1.5rem;
+    line-height: 2.875rem;
+    font-size: 1.125rem;
     color: #2d314d;
     font-weight: 400;
     text-align: center;
     background-color: #ffffff;
   }
   .navbar__item:first-child {
-    margin-top: 24px;
-    padding-top: 18px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    margin-top: 1.5rem;
+    padding-top: 1.125rem;
+    border-top-left-radius: 0.1875rem;
+    border-top-right-radius: 0.1875rem;
   }
   .navbar__item:last-child {
     padding-bottom: 20px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0.1875rem;
+    border-bottom-right-radius: 0.1875rem;
   }
   .navbar__item::after {
     display: none;
@@ -158,19 +163,20 @@ li {
   background: linear-gradient(0.25turn, #31d35c, #2bb7da);
 }
 
-@media (max-width: 49.9375rem) {
+@media (max-width: 63.9375rem) {
   .navbar--mobile {
     position: absolute;
-    top: 60px;
+    z-index: 9;
+    top: 3.75rem;
     bottom: 0;
     left: 0;
     right: 0;
-    min-width: 300px;
+    min-width: 18.75rem;
     display: block;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 49, 77, 0.9)), to(rgba(255, 255, 255, 0.9)));
-    background: -webkit-linear-gradient(rgba(45, 49, 77, 0.9), rgba(255, 255, 255, 0.9));
-    background: -o-linear-gradient(rgba(45, 49, 77, 0.9), rgba(255, 255, 255, 0.9));
-    background: linear-gradient(rgba(45, 49, 77, 0.9), rgba(255, 255, 255, 0.9));
+    background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(#2d314d, rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(#2d314d, rgba(255, 255, 255, 0));
+    background: linear-gradient(#2d314d, rgba(255, 255, 255, 0));
     -webkit-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
@@ -251,15 +257,70 @@ li {
   opacity: 0.6;
 }
 
-@media (max-width: 49.9375rem) {
+@media (max-width: 63.9375rem) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 64rem) {
   .hide-for-desktop {
     display: none;
   }
+}
+
+.top__container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.top__container__mockups {
+  position: relative;
+  width: 100%;
+  height: 77.4vw;
+  max-height: 655px;
+  margin: 0 auto;
+  background-image: url("../../images/bg-intro-mobile.svg");
+  background-size: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.top__container__mockups::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/image-mockups.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.top__container__content {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  text-align: center;
+}
+
+.top__container__content__title {
+  font-size: 36px;
+  padding: 34px 0 0 0;
+  font-weight: 400;
+  color: #2d314d;
+}
+
+.top__container__content__info {
+  font-size: 14px;
+  line-height: 1.4rem;
+  padding: 20px 34px;
+  color: #9698a6;
+}
+
+.top__container__content__btn {
+  margin: 0 0 85px 0;
 }
 /*# sourceMappingURL=style.css.map */

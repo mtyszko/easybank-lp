@@ -1,7 +1,9 @@
 .header
+  max-width: clamp(18.75rem, 100vw, 72.375rem)
   height: 3.75rem
+  margin: 0 auto
 
-  @include breakpoint-up(small)
+  @include breakpoint-up(medium)
     height: 5rem
 
 .header__logo
@@ -19,30 +21,30 @@
     color: $grayish-blue
     transition: .2s ease-in-out
 
-    @include breakpoint-up(small)
+    @include breakpoint-up(medium)
       line-height: 5rem
 
-    @include breakpoint-down(small)
+    @include breakpoint-down(medium)
       display: block
-      min-width: 252px
-      margin: 0 24px
-      line-height: 46px
-      font-size: 18px
+      min-width: 15.75rem
+      margin: 0 1.5rem
+      line-height: 2.875rem
+      font-size: 1.125rem
       color: $dark-blue
       font-weight: 400
       text-align: center
       background-color: #ffffff
 
       &:first-child
-        margin-top: 24px
-        padding-top: 18px
-        border-top-left-radius: 3px
-        border-top-right-radius: 3px
+        margin-top: 1.5rem
+        padding-top: 1.125rem
+        border-top-left-radius: 0.1875rem
+        border-top-right-radius: 0.1875rem
 
       &:last-child
         padding-bottom: 20px
-        border-bottom-left-radius: 3px
-        border-bottom-right-radius: 3px
+        border-bottom-left-radius: 0.1875rem
+        border-bottom-right-radius: 0.1875rem
 
       &::after
         display: none
@@ -64,15 +66,16 @@
 
 // navbar mobile version
 .navbar--mobile
-  @include breakpoint-down(small)
+  @include breakpoint-down(medium)
     position: absolute
-    top: 60px
+    z-index: 9
+    top: 3.75rem
     bottom: 0
     left: 0
     right: 0
-    min-width: 300px
+    min-width: 18.75rem
     display: block
-    background: linear-gradient(hsla(233, 26%, 24%,0.9), hsla(0, 0%, 100%,0.9))
+    background: linear-gradient(hsla(233, 26%, 24%,1), hsla(0, 0%, 100%,0))
     transition: .2s ease-in-out
 
 // hamburger menu
@@ -130,9 +133,9 @@
 // media queries
 
 .hide-for-mobile
-  @include breakpoint-down(small)
+  @include breakpoint-down(medium)
     display: none
 
 .hide-for-desktop
-  @include breakpoint-up(small)
+  @include breakpoint-up(medium)
     display: none
