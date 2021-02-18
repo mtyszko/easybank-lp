@@ -269,12 +269,26 @@ li {
   }
 }
 
-.top__container {
+.top {
   width: 100%;
   max-width: 1440px;
 }
 
-.top__container__mockups {
+@media (min-width: 64rem) {
+  .top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.top__mockups {
   position: relative;
   width: 100%;
   height: 77.4vw;
@@ -286,7 +300,17 @@ li {
   background-repeat: no-repeat;
 }
 
-.top__container__mockups::after {
+@media (min-width: 64rem) {
+  .top__mockups {
+    max-width: 750px;
+    margin: 0;
+    background-image: url("../../images/bg-intro-desktop.svg");
+    background-size: 200%;
+    background-position: -50px -330px;
+  }
+}
+
+.top__mockups::after {
   position: absolute;
   content: '';
   display: block;
@@ -298,7 +322,14 @@ li {
   background-position: center bottom;
 }
 
-.top__container__content {
+@media (min-width: 64rem) {
+  .top__mockups::after {
+    height: 180%;
+    background-position: 100px -100px;
+  }
+}
+
+.top__content {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
               -ms-grid-row-align: center;
@@ -306,21 +337,64 @@ li {
   text-align: center;
 }
 
-.top__container__content__title {
+@media (min-width: 64rem) {
+  .top__content {
+    text-align: left;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 690px;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.top__content__wrapper {
+  width: 100%;
+  max-width: 560px;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  padding: 0 24px;
+}
+
+.top__content__title {
   font-size: 36px;
   padding: 34px 0 0 0;
   font-weight: 400;
   color: #2d314d;
 }
 
-.top__container__content__info {
+@media (min-width: 64rem) {
+  .top__content__title {
+    font-size: 52px;
+  }
+}
+
+.top__content__info {
   font-size: 14px;
   line-height: 1.4rem;
   padding: 20px 34px;
   color: #9698a6;
 }
 
-.top__container__content__btn {
+@media (min-width: 64rem) {
+  .top__content__info {
+    max-width: 430px;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 24px 0;
+  }
+}
+
+.top__content__btn {
   margin: 0 0 85px 0;
+}
+
+@media (min-width: 64rem) {
+  .top__content__btn {
+    margin: 0 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
