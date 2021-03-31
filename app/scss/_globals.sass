@@ -46,4 +46,16 @@ li
   background: $very-light-gray
 
 .bg--grey
-  background: $grayish-blue
+  background: $light-grayish-blue
+
+.txt
+  text-align: center
+  color: $grayish-blue
+  font-size: 0.875rem
+
+  @include breakpoint-up(medium)
+    text-align: left
+
+  &__ttl
+    font-weight: 400
+    color: $dark-blue

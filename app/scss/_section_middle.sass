@@ -1,0 +1,69 @@
+.middle
+  padding: 72px 0 60px 0
+
+  &__ttl
+    padding: 0 40px
+    font-size: 30px
+
+    @include breakpoint-up(large)
+      text-align: left
+      align-self: flex-start
+      padding: 0
+      font-size: 44px
+      font-weight: 300
+
+  &__lead
+    padding:
+    line-height: 1.6rem
+
+    @include breakpoint-up(large)
+      text-align: left
+      align-self: flex-start
+      max-width: 720px
+      padding: 24px 0 34px
+      font-size: 20px
+
+  &__cnt
+    flex-wrap: wrap
+    justify-content: space-between
+    justify-content: center
+
+    @include breakpoint-up(large):first-child
+      padding-left: 0
+
+  &__cnt__wrapper
+    flex: 1 1 100%
+    max-width: 345px
+    justify-self: center
+
+    @include breakpoint-up(large)
+      max-width: 280px
+      padding-left: 28px
+      padding-right: 28px
+
+  .icon
+    display: block
+    width: 72px
+    padding: 15px 0
+    align-self: center
+
+    @include breakpoint-up(large)
+      align-self: flex-start
+
+  &__cnt__subttl
+    font-size: 20px
+    padding: 15px 0
+
+    @include breakpoint-up(large)
+      align-self: flex-start
+      font-size: 22px
+
+  &__cnt__inf
+    padding: 7px 28px
+    line-height: 1.6rem
+    text-align: center
+
+    @include breakpoint-up(large)
+      text-align: left
+      padding: 7px 0
+      font-size: 16px
