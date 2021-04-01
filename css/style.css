@@ -792,10 +792,11 @@ li {
   .footer__nav__cnt__lnk__item {
     text-align: left;
   }
-  .footer__nav__cnt__lnk__item:hover {
-    color: #31d35c;
-    opacity: 0.8;
-  }
+}
+
+.footer__nav__cnt__lnk__item:hover {
+  color: #31d35c;
+  opacity: 0.8;
 }
 
 .footer__btn-and-copy {
