@@ -1,0 +1,95 @@
+.articles
+  padding: 5rem 0 3.75rem 0
+
+  &__ttl
+    padding: 1.5rem 2.5rem
+    font-size: 2rem
+
+    @include breakpoint-up(large)
+      text-align: left
+      align-self: flex-start
+      padding: 2.125rem 0
+      font-size: 2.375rem
+      font-weight: 300
+
+  &__cnt
+    flex-wrap: wrap
+    justify-content: space-between
+    justify-content: center
+
+    &__wrapper
+      flex: 1 1 100%
+      max-width: 21.5625rem
+      justify-self: center
+      padding: 0 0.625rem 1.25rem
+      transition: .2s
+
+      &:hover
+        transform: scale(1.05)
+
+      @include breakpoint-up(large)
+        max-width: 18.125rem
+        padding-left: 1.125rem
+        padding-right: 1.125rem
+
+    &__img
+      display: block
+      width: 100%
+      height: 12.75rem
+      align-self: center
+      background-size: cover
+      border-top-left-radius: 0.3125rem
+      border-top-right-radius: 0.3125rem
+
+      @include breakpoint-up(large)
+        align-self: flex-start
+
+    &__text-area
+      background-color: $white
+      height: 16.25rem
+      border-bottom-left-radius: 0.3125rem
+      border-bottom-right-radius: 0.3125rem
+
+      &__author
+        padding: 1.875rem 0.625rem 0.3125rem
+        font-size: 0.6875rem
+        text-align: left
+
+      &__subttl
+        padding: 0.625rem 0.625rem
+        font-size: 1rem
+        text-align: left
+
+        &:hover
+          color: $lime-green
+          opacity: 0.8
+
+        @include breakpoint-up(large)
+          align-self: flex-start
+          font-size: 1rem
+
+      &__inf
+        padding: 0.625rem 0.625rem 2.5rem
+        line-height: 1.3rem
+        font-size: 0.875rem
+        text-align: left
+
+// bg images
+
+.money
+  background-image: url('../../images/image-currency.jpg')
+
+.restaurant
+  background-image: url('../../images/image-restaurant.jpg')
+
+.plane
+  background-image: url('../../images/image-plane.jpg')
+
+.confetti
+  background-image: url('../../images/image-confetti.jpg')
+
+// first article
+.first
+
+  @include breakpoint-up(large)
+    padding-left: 0

@@ -1,0 +1,97 @@
+.footer
+  background-color: $dark-blue
+  color: $light-grayish-blue
+
+  &__wrapper
+    margin: 0 auto
+
+    @include breakpoint-up(large)
+      flex-direction: row
+      justify-content: center
+      width: 70.625rem
+      height: 11.875rem
+
+  &__imgs
+    height: 10rem
+    justify-content: space-evenly
+
+    @include breakpoint-up(large)
+      align-self: center
+      width: 10rem
+
+    &__logo
+      width: 9.125rem
+
+    &__social
+      width: 11.5625rem
+
+      @include breakpoint-up(large)
+        width: 10rem
+
+      &__icon
+        width: 1.625rem
+
+        @include breakpoint-up(large)
+          width: 1.375rem
+
+        &:hover
+          filter: invert(61%) sepia(100%) saturate(367%) hue-rotate(81deg) brightness(93%) contrast(89%)
+
+  &__nav
+    margin: 0 auto
+    width: 11.5625rem
+    height: 11.25rem
+    justify-content: space-between
+
+    @include breakpoint-up(large)
+      flex-direction: row
+      width: 18.75rem
+
+    &__cnt
+      justify-content: space-between
+      height: 5.25rem
+
+      &__lnk
+        color: inherit
+
+        &__item
+          text-align: center
+          font-size: 0.875rem
+
+          @include breakpoint-up(large)
+            text-align: left
+
+            &:hover
+              color: $lime-green
+              opacity: 0.8
+
+  &__btn-and-copy
+    justify-content: space-around
+    height: 11.25rem
+    padding: 0.625rem 0 2.5rem
+
+    &__lnk
+      width: 100%
+      justify-content: flex-end
+
+    &__btn
+      position: static
+
+      @include breakpoint-up(large)
+        align-self: flex-end
+
+    &__copy
+      color: $grayish-blue
+      font-size: 0.875rem
+
+  &__attribution
+    width: 100%
+    font-size: 9px
+    text-align: center
+    padding: 10px 0
+
+    &__lnk
+      color: $white
+
+      &:hover
+        color: $lime-green

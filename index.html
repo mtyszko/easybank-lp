@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon flex--as--c" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-  <title>Frontend Mentor | Easybank landing page</title>
+  <title>Easybank landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -54,21 +54,23 @@
       </div>
       <button class="request__btn flex--as--c hide-for-mobile">Request Invite</button>
     </header>
-    <section class="bg--light flex flex--jc--c">
-      <div class="top flex flex--dir--c ">
+    <div class="bg--light flex flex--jc--c">
+      <section class="top flex flex--dir--c ">
         <div class="top__img"></div>
         <div class="top__cnt flex flex--dir--c">
+
           <div class="top__cnt__wrapper">
             <h1 class="top__cnt__ttl txt txt__ttl">Next generation<br /> digital banking</h1>
             <p class="top__cnt__inf txt">Take your financial life online. Your Easybank account will be a one-stop-shop
               for spending, saving, budgeting, investing, and much more.</p>
             <button class="top__cnt__btn request__btn">Request Invite</button>
           </div>
+
         </div>
-      </div>
-    </section>
-    <section class="flex flex--jc--c bg--grey">
-      <div class="middle flex flex--dir--c">
+      </section>
+    </div>
+    <div class="flex flex--jc--c bg--grey">
+      <section class="middle flex flex--dir--c">
         <div class="middle__ttl__wrapper flex flex--dir--c">
           <h2 class="middle__ttl txt txt__ttl flex--as--c"> Why choose Easybank?</h2>
           <p class="middle__lead txt flex--as--c"> We leverage Open Banking to turn your bank account into your financial hub. Control
@@ -101,78 +103,114 @@
             </p>
           </div>
         </div>
+      </section>
+    </div>
+    <div class="flex flex--jc--c bg--light">
+      <section class="articles flex flex--dir--c">
+        <div class="articles__ttl__wrapper flex flex--dir--c">
+          <h2 class="articles__ttl txt txt__ttl flex--as--c">Latest Articles </h2>
+
+        </div>
+        <div class="articles__cnt flex">
+          <a href="#">
+            <div class="articles__cnt__wrapper flex flex--dir--c first">
+              <div class="articles__cnt__img money"></div>
+
+              <div class="articles__cnt__text-area">
+                <p class="articles__cnt__text-area__author txt"> By Claire Robinson</p>
+                <h4 class="articles__cnt__text-area__subttl txt txt__ttl flex--as--c">Receive money in any currency with no fees</h4>
+                <p class="articles__cnt__text-area__inf txt flex--as--c">The world is getting smaller and we’re becoming more mobile. So why should you be
+                  forced to only receive money in a single …</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="articles__cnt__wrapper flex flex--dir--c">
+              <div class="articles__cnt__img restaurant"></div>
+
+              <div class="articles__cnt__text-area">
+                <p class="articles__cnt__text-area__author txt">By Wilson Hutton</p>
+                <h4 class="articles__cnt__text-area__subttl txt txt__ttl flex--as--c">Treat yourself without worrying about money</h4>
+                <p class="articles__cnt__text-area__inf txt flex--as--c"> Our simple budgeting feature allows you to separate out your spending and set
+                  realistic limits each month. That means you …</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="articles__cnt__wrapper flex flex--dir--c">
+              <div class="articles__cnt__img plane"></div>
+              <div class="articles__cnt__text-area">
+                <p class="articles__cnt__text-area__author txt">By Wilson Hutton</p>
+                <h4 class="articles__cnt__text-area__subttl txt txt__ttl flex--as--c">Take your Easybank card wherever you go</h4>
+                <p class="articles__cnt__text-area__inf txt flex--as--c">We want you to enjoy your travels. This is why we don’t charge any fees on purchases
+                  while you’re abroad. We’ll even show you …</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="articles__cnt__wrapper flex flex--dir--c">
+              <div class="articles__cnt__img confetti"></div>
+              <div class="articles__cnt__text-area">
+                <p class="articles__cnt__text-area__author txt">By Claire Robinson</p>
+                <h4 class="articles__cnt__text-area__subttl txt txt__ttl flex--as--c"> Our invite-only Beta accounts are now live!</h4>
+                <p class="articles__cnt__text-area__inf txt flex--as--c"> After a lot of hard work by the whole team, we’re excited to launch our closed beta.
+                  It’s easy to request an invite through the site ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapper flex flex--dir--c flex--as--c">
+        <div class="footer__imgs flex flex--dir--c">
+          <a href="#"><img src="./images/logo-white.svg" alt="" class="footer__imgs__logo flex--as--c" /></a>
+          <div class="footer__imgs__social flex flex--js--sb flex--as--c">
+            <a href="#"><img src="./images/icon-facebook.svg" alt="" class="footer__imgs__social__icon fb__icon" /></a>
+            <a href="#"><img src="./images/icon-youtube.svg" alt="" class="footer__imgs__social__icon yt__icon" /></a>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="" class="footer__imgs__social__icon tw__icon" /></a>
+            <a href="#"><img src="./images/icon-pinterest.svg" alt="" class="footer__imgs__social__icon pnt__icon" /></a>
+            <a href="#"> <img src="./images/icon-instagram.svg" alt="" class="footer__imgs__social__icon inst__icon" /></a>
+          </div>
+        </div>
+        <div class="footer__nav flex flex--as--c flex--dir--c">
+          <ul class="footer__nav__cnt flex flex--as--c flex--dir--c">
+            <a href="#" class="footer__nav__cnt__lnk">
+              <li class="footer__nav__cnt__lnk__item">About Us</li>
+            </a>
+            <a href="#" class="footer__nav__cnt__lnk">
+              <li class="footer__nav__cnt__lnk__item">Contact</li>
+            </a>
+            <a href="#" class="footer__nav__cnt__lnk">
+              <li class="footer__nav__cnt__lnk__item">Blog</li>
+            </a>
+          </ul>
+          <ul class="footer__nav__cnt flex flex--as--c flex--dir--c">
+            <a href="#" class="footer__nav__cnt__lnk">
+              <li class="footer__nav__cnt__lnk__item">Careers</li>
+            </a>
+            <a href="#" class="footer__nav__cnt__lnk">
+              <li class="footer__nav__cnt__lnk__item">Support</li>
+            </a>
+            <a>
+              <li class="footer__nav__cnt__lnk__item">Privacy Policy</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer__btn-and-copy flex flex--dir--c flex--as--c">
+          <a href="#" class="footer__btn-and-copy__lnk flex"><button class="footer__btn-and-copy__btn request__btn flex--as--c">Request Invite</button></a>
+          <div class="footer__btn-and-copy__copy flex--as--c">&copy; Easybank. All Rights Reserved</div>
+        </div>
       </div>
-    </section>
-    <section class="bottom flex bg--light"></section>
-    <footer></footer>
+      <div class="footer__attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__attribution__lnk">Frontend Mentor</a>.
+        Coded by <a href="mtdev.pl" class="footer__attribution__lnk">&copy; mtdev</a>.
+      </div>
+    </footer>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  Latest Articles
-
-  By Claire Robinson
-  Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be
-  forced to only receive money in a single …
-
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set
-  realistic limits each month. That means you …
-
-  By Wilson Hutton
-  Take your Easybank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases
-  while you’re abroad. We’ll even show you …
-
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta.
-  It’s easy to request an invite through the site ...
-
-
-
-  About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  © Easybank. All Rights Reserved -->
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">mtdev</a>.
-  </div> -->
+  <!--  -->
   <script src="app/js/index.js"></script>
 </body>
 
