@@ -7,7 +7,7 @@ This is a simple landing page (click [here](https://easybank.mtdev.pl) to see fu
 ## Contribute
 
 - Source Code: [here](https://github.com/mtyszko/easybank-lp)
-- Issue Tracker: [here](hhttps://github.com/mtyszko/easybank-lp/issues)
+- Issue Tracker: [here](https://github.com/mtyszko/easybank-lp/issues)
 
 
   Chalenged by [Frontend Mentor](https://github.com/mtyszko/easybank-lp) coded by [&copy; mtdev](https://mtdev.pl)
